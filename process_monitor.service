@@ -1,0 +1,12 @@
+Description=Simple service for checking and restart service
+ 
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/process_monitor nginx
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
+
+
+
